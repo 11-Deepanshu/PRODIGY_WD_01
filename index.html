@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body class="bdy"> 
+    
+    <div class="logo" id="logo">
+        <div class="imge">
+
+        </div>
+        <div class="info">
+            <a href="#logo">Home</a>
+            <a href="#project">Projects</a>
+            <a href="#certificate">Certifications</a>
+            <a href="resume.pdf">About</a>
+        </div>
+    </div>
+
+    <div class="bio">
+        <div class="bio-left">
+            <p id="name">Hii! Deepanshu</p>
+            <p id="line">My name is Deepanshu. Currently, I am pursuing my B.Tech form Meerut Institue of Engineering and Institute, Meerut in Computer Science and Engineering(CSE). I actively participates in coding competitions and tech workshops, consistently seeking to expand my expertise in areas like software development, machine learning, and data structures.I also contributes to various open-source projects and keen on applying my skills in practical, real-world problems. </p>
+            <a href="resume.pdf">My Resume</a>
+        </div>
+
+        <div class="bio-right">
+            
+        </div>
+    </div>
+    <hr>
+
+    <div class="role">
+        <h3>Web designer</h3>
+        <h3>MERN Stack</h3>
+        <h3>Graphic Designer</h3>
+        <h3>Programming Languages</h3>
+    </div>
+
+    <br>
+
+    <div class="projects" id="project">
+        <h2>Projects</h2>
+
+        <div class="cards">
+            <div class="card1">
+                <a href=""><img src="ecommerce.png" alt="" class="site">
+                    <div class="content">
+                        <h5>Redstore</h5>
+                        <p>An eCommerce site created using HTML and CSS is a web-based platform designed for buying and selling goods and services.</p>
+                    </div>
+                </a>
+            </div>
+    
+            <div class="card2">
+                <a href=""><img src="Tic-Tac-Toe.png" alt="" class="site">
+                <div class="content">
+                    <h5>Tic-Tac-Toe</h5>
+                    <p>A Tic Tac Toe game created using HTML, CSS, and JavaScript is a web-based interactive version of the classic game, designed for two players who take turns marking the spaces in a 3x3 grid. </p>
+                </div></a>
+            </div>
+        </div>
+
+        <button type="button" class="more" onclick="more()">Many More </button>
+    </div>
+    <hr>
+    <hr>
+
+    <div class="certificate" id="certificate">
+        <h4>View My achievements and Certifications</h4>
+        <div class="cert-card">
+            <div class="cert">
+                <img src="foundation.png" alt="" class="cert">
+            </div>
+            <div class="cert">
+                <img src="architect.jpg" alt="" class="cert">
+            </div>
+            <div class="cert">
+                <img src="python.jpg" alt="" class="cert">
+            </div>
+            <div class="cert">
+                <img src="Course-Excellence.jpg" alt="" class="cert">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="social">
+            <a href="https://www.instagram.com/__deepanshu.11/"><img src="instagram.png" alt=""></a>
+            <a href="https://www.facebook.com/DEEPANSHU.KARDAM.1272010"><img src="facebook.png" alt=""></a>
+            <a href="https://twitter.com/deepanshukr890"><img src="twitter.png" alt=""></a>
+            <a href="https://www.linkedin.com/feed/"><img src="linkedin.png" alt=""></a>
+        </div>
+
+        <div class="map">
+            <p>Map</p>
+            <iframe id="location" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d112046.88729577135!2d77.299712!3d28.6457856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1714898163879!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+        </div>
+
+        <div class="contact">
+            <h3>Contacts:</h3>
+            <a href="deepanshukr890@gmail.com"><img src="mail.png" alt="">deepanshukr890@gmail.com</a>
+            <a href="8791956082"><img src="call.png" alt="">+91 8791956082</a>
+
+
+            <button type="button" id="qury" onclick="openquery()">Send Query</button>
+            
+        </div>
+    </div>
+
+    <script>
+
+        function openquery(){
+            window.location.href="form.html";
+        }
+
+        function more(){
+            window.location.href="project.html";
+        }
+
+    </script>
+
+</body>
+
+
+</html>

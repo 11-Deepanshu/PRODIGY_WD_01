@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+    <div class="logo" id="logo">
+        <div class="imge">
+
+        </div>
+        <div class="info">
+            <a href="index.html">Home</a>
+            <a href="project.html">Projects</a>
+            <a href="#certificate">Certifications</a>
+            <a href="resume.pdf">About</a>
+        </div>
+    </div>
+    
+    <div class="main">    
+        <div class="cen">
+            <form class="cont" id="frm">
+                <div class="nm">
+                    <label for="nme">Name:</label>
+                    <input type="text" placeholder="Enter your Name" id="nme">
+                </div>
+        
+                <div class="ml">
+                    <label for="mail">E-Mail:</label>
+                    <input type="text" placeholder="Enter your Mail" id="mail">
+                </div>
+        
+                <div class="nmr">
+                    <label for="numbr">Phone Number:</label>
+                    <input type="text" placeholder="Enter your number" id="numbr">
+                 </div>
+        
+                 <div class="addr">
+                    <label for="addres">Address:</label>
+                    <input type="text" placeholder="Enter your current address" id="addres">
+                 </div>
+                
+                <div class="area">
+                    <label for="query">Query:</label>
+                    <textarea name="queryy" cols="40" rows="5" placeholder="Enter your query here...." id="query"></textarea>
+                </div>
+                
+                <div class="dis">
+                    <button type="submit" id="btnn">Send</button>
+            
+                    <p id="msg"></p>
+                </div>
+            </form>
+    
+            
+        </div>   
+    </div>
+
+    <div class="footer">
+        <div class="social">
+            <a href="https://www.instagram.com/__deepanshu.11/"><img src="instagram.png" alt=""></a>
+            <a href="https://www.facebook.com/DEEPANSHU.KARDAM.1272010"><img src="facebook.png" alt=""></a>
+            <a href="https://twitter.com/deepanshukr890"><img src="twitter.png" alt=""></a>
+            <a href="https://www.linkedin.com/feed/"><img src="linkedin.png" alt=""></a>
+        </div>
+
+        <div class="map">
+            <p>Map</p>
+            <iframe id="location" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d112046.88729577135!2d77.299712!3d28.6457856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1714898163879!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="contact">
+            <h3>Contacts:</h3>
+            <a href="deepanshukr890@gmail.com"><img src="mail.png" alt="">deepanshukr890@gmail.com</a>
+            <a href="8791956082"><img src="call.png" alt="">+91 8791956082</a>
+
+
+            <a href="#frm"><button type="button" id="qury">Send Query</button></a>
+            
+        </div>
+    </div>
+
+
+
+    <script>
+        btnn.addEventListener('click', ()=>{
+            if (nme.value=='' | mail.value=='' | numbr.value=='' | addres.value=='' | query.value==''){
+                msg.innerText="*all field are mandatory";
+        }
+
+        else{
+            alert("Query submitted successfully");
+        }
+    });
+    </script>
+</body>
+</html>
